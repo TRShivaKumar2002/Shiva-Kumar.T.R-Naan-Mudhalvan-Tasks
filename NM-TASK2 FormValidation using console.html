@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="Sty1.css">
+        
+    </head>
+    <body><center>
+        <div class="l">
+        <h1>Form Validation using User datas</h1>
+        <form id="f">
+            <table>
+                <tr>
+                    <th><label for="fname" class="fname">Enter Your FirstName:
+                
+                    </label></th>
+                    <th><input type="text" id="fname" name="fname" placeholder="Firstname" required></th>
+                </tr>
+                <tr><th><label for="lname" class="lname">Enter Your LastName:</label>
+            </th>
+            <th><input type="text" id="lname" name="lname" placeholder="laststname" required></th>
+        </tr>
+        <tr>
+            <th><label for="phone" class="ph">Enter your Phone Number:</label></th>
+                <th><input type="text" id="phone" name="ph" placeholder="Phone Number" required></th>
+        </tr>
+        <tr>
+            <th><label for="email" class="em">Enter your Email id :</label></th>
+            <th><input type="email" id="email" name="em" placeholder="Email" required></th>
+        </tr>
+         <tr>
+            <th>          </th>
+            <th><button type="submit" id="submit" >Click Me To Submit</button></th>
+            <th>          </th>
+         </tr>       
+        </table>
+        
+        
+        <br><br>
+        </form>
+        <script>
+            var form=document.getElementById("f")
+form.addEventListener('submit',(e)=>{
+   var Fname=document.getElementById("fname").Value;
+   var Lname=document.getElementById("lname").Value;
+   var Email=document.getElementById("email").Value;
+   var Phone=document.getElementById("phone").Value;
+   
+   console.log("Firstname"+'$Fname');
+   console.log("Lastname"+'$Lname');
+   console.log("email"+'$Email');
+   console.log("phone"+'$Phone');
+   
+}
+)
+    </script>
+    </div>
+    </center>
+    </body>
+</html>

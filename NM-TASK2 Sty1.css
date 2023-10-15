@@ -1,0 +1,27 @@
+body
+{
+    background-color: violet;
+    margin:15%;
+}
+th{
+    text-align:left;
+    padding: 1%;
+}
+h1{
+    background-color: gold;
+}
+.l
+{
+    background-color: aqua;
+    width:fit-content;
+
+}
+label
+{
+    font-size:larger;
+}
+input{
+  
+   background-color:azure;
+   border-color: orange;
+}
